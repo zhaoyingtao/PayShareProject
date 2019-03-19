@@ -35,7 +35,7 @@ publish {
     userOrg = 'zhaoyingtao'
     groupId = 'com.bintray.library'
     artifactId = 'payshare_library'
-    publishVersion = '1.0.0'
+    publishVersion = '1.1.0'
     desc = 'Oh hi, this is a nice description for a project, right?'
 }
 

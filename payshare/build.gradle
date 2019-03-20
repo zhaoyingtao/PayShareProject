@@ -34,7 +34,7 @@ android {
 publish {
     userOrg = 'zhaoyingtao'
     groupId = 'com.bintray.library'
-    artifactId = 'payshare_library'
+    artifactId = 'payshare'
     publishVersion = '1.1.0'
     desc = 'Oh hi, this is a nice description for a project, right?'
 }

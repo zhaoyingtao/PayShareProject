@@ -12,7 +12,7 @@
 一、在项目中直接引入  
 将下面的 x.y.z 更改为上面显示的版本号   
 `
-compile 'com.bintray.library:payshare_library:x.y.z'
+compile 'com.bintray.library:payshare:x.y.z'
 `   
 
 二、项目中的配置

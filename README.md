@@ -3,7 +3,7 @@
 
 
 # PayShareProject
-[ ![Download](https://api.bintray.com/packages/zhaoyingtao/maven/payshare_library/images/download.svg) ](https://bintray.com/zhaoyingtao/maven/payshare_library/_latestVersion)
+[ ![Download](https://api.bintray.com/packages/zhaoyingtao/maven/payshare/images/download.svg) ](https://bintray.com/zhaoyingtao/maven/payshare/_latestVersion)
 
 关于授权登录和分享这块集成相对配置比较多，需要注意点！
 

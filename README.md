@@ -123,7 +123,23 @@ android {
      super.onActivityResult(requestCode, resultCode, data);
      UMShareAPI.get(this).onActivityResult(requestCode, resultCode, data);
   }
+ ```   
+ 2.6 项目的其他配置  
  ```
+ 在baseActivity中添加如下代码
+    @Override
+    public void onResume() {
+        super.onResume();
+        MobclickAgent.onResume(this);
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        MobclickAgent.onPause(this);
+    }
+ ```
+ 
 三、授权、分享、支付相关调用   
 授权 
 ```

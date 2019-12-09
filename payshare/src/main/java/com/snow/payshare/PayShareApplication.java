@@ -47,7 +47,7 @@ public class PayShareApplication {
      */
     public PayShareApplication initPayShare(Context context, String umengAppkey) {
         UMConfigure.init(context, umengAppkey
-                , "umeng", UMConfigure.DEVICE_TYPE_PHONE, "");
+                , null, UMConfigure.DEVICE_TYPE_PHONE, null);
         return payShare;
     }
 

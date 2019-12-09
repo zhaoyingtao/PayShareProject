@@ -67,6 +67,7 @@ public class ShareManager {
      * @param shareBean
      */
     public void setShareData(ShareBean shareBean) {
+        reSetShareDataNull();
         this.shareBean = shareBean;
         if (shareBean == null) {
             shareBean = new ShareBean();
@@ -89,6 +90,7 @@ public class ShareManager {
      * @param imgUrl ==网络图
      */
     public void setShareData(String imgUrl) {
+        reSetShareDataNull();
         umImage = new UMImage(mActivity, imgUrl);//网络图片
         //设置缩略图
         UMImage thumb = new UMImage(mActivity, imgUrl);
@@ -103,11 +105,20 @@ public class ShareManager {
      * @param bitmap bitmap格式
      */
     public void setShareData(Bitmap bitmap) {
+        reSetShareDataNull();
         umImage = new UMImage(mActivity, bitmap);//网络图片
         //设置缩略图
         UMImage thumb = new UMImage(mActivity, bitmap);
         umImage.setThumb(thumb);
         umImage.compressStyle = UMImage.CompressStyle.SCALE;//大小压缩，默认为大小压缩，适合普通很大的图
+    }
+
+    /**
+     * 重新填充数据之前需要将分享数据都置空
+     */
+    private void reSetShareDataNull() {
+        umWeb = null;
+        umWeb = null;
     }
 
     /**
@@ -268,6 +279,7 @@ public class ShareManager {
     void showToast(String msg) {
         Toast.makeText(mActivity, msg, Toast.LENGTH_LONG).show();
     }
+
     /**
      * 判断是否安装了某个应用
      *

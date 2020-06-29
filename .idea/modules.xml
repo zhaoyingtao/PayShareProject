@@ -3,8 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/PayShareProject.iml" filepath="$PROJECT_DIR$/PayShareProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PayShareProject-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PayShareProject-app.iml" group="PayShareProject/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/payshare/PayShareProject-payshare.iml" filepath="$PROJECT_DIR$/.idea/modules/payshare/PayShareProject-payshare.iml" group="PayShareProject/payshare" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/payshare/payshare.iml" filepath="$PROJECT_DIR$/payshare/payshare.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tempWork-PayShareProject.iml" filepath="$PROJECT_DIR$/.idea/modules/tempWork-PayShareProject.iml" group="PayShareProject" />
     </modules>
   </component>
 </project>

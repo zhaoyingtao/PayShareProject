@@ -27,6 +27,7 @@ public class PayShareApplication {
 
     /**
      * 设置debug模式，可以打印出具体的错误信息
+     *
      * @param isDebug
      * @return
      */
@@ -46,10 +47,23 @@ public class PayShareApplication {
      * @return
      */
     public PayShareApplication initPayShare(Context context, String umengAppkey) {
-        UMConfigure.init(context, umengAppkey
-                , null, UMConfigure.DEVICE_TYPE_PHONE, null);
+//        UMConfigure.init(context, umengAppkey, null, UMConfigure.DEVICE_TYPE_PHONE, null);
+        initPayShare(context, umengAppkey, null, UMConfigure.DEVICE_TYPE_PHONE, null);
         return payShare;
     }
+    /**
+     * 参数1:context
+     * 参数2:友盟 umengAppkey
+     * 参数3:友盟 channel
+     * 参数4:设备类型，UMConfigure.DEVICE_TYPE_PHONE为手机、UMConfigure.DEVICE_TYPE_BOX为盒子，默认为手机
+     * 参数5:Push推送业务的secret
+     * @return
+     */
+    public PayShareApplication initPayShare(Context context, String umengAppkey, String channel, int umConfigure, String s2) {
+        UMConfigure.init(context, umengAppkey, channel, umConfigure, s2);
+        return payShare;
+    }
+
 
     /**
      * 微信平台申请的appId,将应用注册到微信中
